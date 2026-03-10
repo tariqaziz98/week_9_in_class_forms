@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="imgs/email.png"/>
+  <title>Travel Buddy Match-Up</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+ <form action="https://formspree.io/f/mqeypygg" method="POST">
+  <fieldset>
+    <legend>Travel Buddy Match-Up</legend>
+
+    <label for="name_id">Your Name</label>
+    <input type="text" id="name_id" name="name" placeholder="Enter Your Name" required>
+
+    <label for="email_id">Contact Email</label>
+    <input type="email" id="email_id" name="email" placeholder="Enter Your Email" required>
+
+    <label for="bio_id">Short Bio</label>
+    <textarea id="bio_id" name="bio" placeholder="Tell us a little about yourself"></textarea>
+
+    <label for="destination_id">Dream Destination</label>
+    <input type="text" id="destination_id" name="dream_destination" placeholder="e.g. Tokyo, Paris, Bali">
+
+    <label for="travel_style_id">Travel Style</label>
+    <select id="travel_style_id" name="travel_style">
+      <option value="">-- Select a Travel Style --</option>
+      <option value="adventure">Adventure</option>
+      <option value="relaxation">Relaxation</option>
+      <option value="cultural">Cultural</option>
+    </select>
+
+    <fieldset>
+      <legend>Interests (select all that apply)</legend>
+
+      <input type="checkbox" id="hiking_id" name="interests" value="hiking">
+      <label for="hiking_id">Hiking</label>
+
+      <input type="checkbox" id="museums_id" name="interests" value="museums">
+      <label for="museums_id">Museums</label>
+
+      <input type="checkbox" id="food_id" name="interests" value="food_tours">
+      <label for="food_id">Food Tours</label>
+
+      <input type="checkbox" id="beaches_id" name="interests" value="beaches">
+      <label for="beaches_id">Beaches</label>
+
+      <input type="checkbox" id="nightlife_id" name="interests" value="nightlife">
+      <label for="nightlife_id">Nightlife</label>
+    </fieldset>
+
+    <label for="travel_date_id">Available Travel Date</label>
+    <input type="date" id="travel_date_id" name="travel_date">
+
+    <label for="suitcase_color_id">Favorite Suitcase Color</label>
+    <input type="color" id="suitcase_color_id" name="suitcase_color" value="#3498db">
+
+    <input type="submit" value="Find My Travel Buddy!">
+  </fieldset>
+ </form>
+</body>
+</html>
